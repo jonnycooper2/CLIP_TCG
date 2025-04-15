@@ -1,0 +1,47 @@
+# Git specific
+.git/
+.gitignore
+.dockerignore
+
+# Python cache & compiled
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# IDE
+.idea/
+
+# Fly.io config (not needed inside container)
+fly.toml
+.fly/
+
+# Local assets/models/DB (not used by serve.py)
+data/assets/
+data/pokemon_cards_simple.db
+models/
+
+# Unused/Old Scripts
+*.log
+*.tmp
+*.bak
+structure.txt
+yolo_image_detector.py
+client.py
+server.py # Ignore the old server script
+test_fly_api.py
+predict.py # Replicate script
+cog.yaml # Replicate config
+
+# Documentation
+README.md
+
+# System files
+.DS_Store
+Thumbs.db 
