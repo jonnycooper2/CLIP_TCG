@@ -1,0 +1,45 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# --- Environments ---
+.env
+.venv/
+env/
+venv/
+
+# --- PyCharm IDE ---
+.idea/
+
+# --- Model Weights (Only used locally) ---
+models/
+!models/.gitkeep  # optional, to keep empty dirs
+
+# --- Raw card assets (not needed for Replicate inference) ---
+data/assets/
+
+# --- Optional: ignore SQLite DB if you're not versioning it ---
+data/pokemon_cards_simple.db
+
+# --- Output / generated ---
+*.jpg
+*.png
+*.jpeg
+*.webp
+*.tmp
+*.bak
+structure.txt
+
+# --- System ---
+.DS_Store
+Thumbs.db
+
+# --- Old script ---
+yolo_image_detector.py
+
+# --- Local Application (Not for Replicate) ---
+server.py
+client.py 
