@@ -14,32 +14,38 @@ venv/
 # --- PyCharm IDE ---
 .idea/
 
-# --- Model Weights (Only used locally) ---
+# --- Local YOLO Models (Not used by Fly.io serve.py) ---
 models/
 !models/.gitkeep  # optional, to keep empty dirs
 
-# --- Raw card assets (not needed for Replicate inference) ---
+# --- Local Card Image Assets (Not used by Fly.io serve.py) ---
 data/assets/
 
-# --- Optional: ignore SQLite DB if you're not versioning it ---
+# --- Local SQLite DB (Not used by Fly.io serve.py) ---
 data/pokemon_cards_simple.db
 
-# --- Output / generated ---
+# --- Output / Generated / Temporary ---
 *.jpg
-*.png
 *.jpeg
+*.png
 *.webp
 *.tmp
 *.bak
+*.log
 structure.txt
 
 # --- System ---
 .DS_Store
 Thumbs.db
 
-# --- Old script ---
+# --- Old/Unused Scripts ---
 yolo_image_detector.py
+client.py
+server.py # Assuming this is the old server script, not serve.py
+predict.py # Assuming this Replicate script is no longer needed
+cog.yaml # Assuming this Replicate config is no longer needed
 
-# --- Local Application (Not for Replicate) ---
-server.py
-client.py 
+# --- Fly.io --- 
+# Fly files are typically small and useful to commit
+# fly.toml # Usually committed
+# .fly/ 
