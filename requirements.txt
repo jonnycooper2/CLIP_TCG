@@ -1,6 +1,13 @@
-torch>=2.0.0
-numpy>=1.22.0
-Pillow>=9.0.0
-faiss-cpu>=1.7.0
-open_clip_torch>=2.20.0
-requests>=2.28.0
+# Core ML & Search
+torch --index-url https://download.pytorch.org/whl/cpu # Force CPU version
+faiss-cpu # CPU version of FAISS
+open_clip_torch
+numpy
+Pillow
+
+# Web Framework & Server
+fastapi
+uvicorn[standard] # Includes standard dependencies like httptools
+
+# HTTP Requests (for fetching image URL)
+requests
